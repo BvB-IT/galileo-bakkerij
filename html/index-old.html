@@ -6,20 +6,9 @@
     <meta name="description" content="A profile page about the best bakery in Capelle aan den IJssel">
     <title>bakkerij</title>
       <!-- Add the Reset CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/assets/images/logo_small_icon_only.png" type="image/x-icon">
-    <!-- <script>
-        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-        function myFunction() {
-          var x = document.getElementById("main-nav");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-      </script> -->
 </head>
 <body>
     <div class="main-container">
@@ -38,10 +27,10 @@
         </div> 
         <main class="article-container">
             <div class="article1-container">   
-                <div class="image1"></div>
+                <div id="image1"></div>
                 <article class="about">   
-                    <div class="article-head">Over Ons</div>
-                    <div class="text-about">
+                    <div class="heading-2" id="head-about">Over Ons</div>
+                    <div class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sapien a arcu ornare lobortis commodo
                         sit amet dui. Sed maximus accumsan libero, id malesuada diam tincidunt sit amet. Nunc semper odio
                         tristique, mattis purus eget, efficitur mi. Pellentesque habitant morbi tristique senectus et netus et
@@ -55,10 +44,10 @@
                 </article>       
             </div>     
             <div class="article2-container">
-                <div class="image2"></div>
+                <div id="image2"></div>
                 <article class="contact"> 
-                    <div class="article-head">Contact</div>
-                    <div class="text-contact">
+                    <div class="heading-2" id="head-contact">Contact</div>
+                    <div class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sapien a arcu ornare lobortis commodo
                         sit amet dui. Sed maximus accumsan libero, id malesuada diam tincidunt sit amet. Nunc semper odio
                         tristique, mattis purus eget, efficitur mi. Pellentesque habitant morbi tristique senectus et netus et
@@ -74,8 +63,8 @@
             </div>
         </main>
         <div class="footer-container">
-            <div class="disclaimer">© 2021 - Bakkerij</div>
-            <footer class="footer">    
+            <footer class="footer">
+                <div class="disclaimer">© 2021 - Bakkerij</div>
                 <nav class="footer-nav">
                     <ul class="nav-footer-grid">
                         <li id="home"><a href="home.html">Home</a></li>
