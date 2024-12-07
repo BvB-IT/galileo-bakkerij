@@ -13,7 +13,8 @@ body, p, div, span, a, li {
 
 * {
     margin: 0;
-    /* max-width: 768px; */
+    min-width: 1920x;
+    max-width: 3840px;
     font-size: 18px;
   }
 
@@ -59,6 +60,7 @@ body, p, div, span, a, li {
     background-position: center;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+    margin-bottom: 1rem;
   }
 
 main {
@@ -72,13 +74,13 @@ main {
     grid-template-areas:    "about"
                             "contact";
     gap: 1rem;
-    margin: 1rem;  
+    margin: 0rem 1rem 0rem 1rem;  
   }
 
 .article1-container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: 
                         "image1"
                         "about";
@@ -90,6 +92,9 @@ main {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: cover;
+    /* width: 100%; */
+    height: 15rem;
   }
 
 .article-head {
@@ -104,7 +109,7 @@ main {
 .article2-container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: 
                         "image2"
                         "contact";
@@ -116,6 +121,9 @@ main {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: cover;
+    /* width: 100%; */
+    height: 15rem;
   } 
 
 .contact {
@@ -172,12 +180,11 @@ main {
     border-bottom: 5px solid black;
 }
 
-@media only screen and (min-width: 1920px) and (max-width: 3840px) {
+@media only screen and (min-width: 1366px) and (max-width: 3840px) {
 
 * {
     box-sizing: border-box;
     margin: 0;
-    
     }
 
     .main-container {
@@ -307,14 +314,13 @@ main {
     }
     
     .image1 {
-      margin-top: 2rem;
-        grid-area: image1;
+      grid-area: image1;
     }
     
     .about {
       grid-area: text-about;
       font-size: 18px;
-      /* place-items: start; */
+
   }
 
     .article-head {
@@ -337,8 +343,8 @@ main {
         gap: 1rem;
         place-items: center;
         grid-template-areas: 
-                                    "text-contact      image2"
-                                    "button2    button2";
+                                    "text-contact image2"
+                                    "button2      button2";
         margin: 2rem 25rem 2rem 25rem; 
     }
     
