@@ -1,0 +1,42 @@
+@import url(/css/style.css);
+@import url(/css/header.css);
+@import url(/css/footer.css);
+
+.form-container {
+    grid-area: articles;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+                        "head           head    head"
+                        "adres          .       form"
+                        "phone          .       form"
+                        "email2         .       form"
+                        "phone2         .       form"
+                        "hours          .       button"
+}
+
+.colofon-head {
+    grid-area: head;
+    margin-bottom: 1rem;
+}
+
+.colofon-adres {
+    grid-area: adres;
+}
+
+.colofon-phone {
+    grid-area: phone;
+}
+
+.colofon-email {
+    grid-area: email2;
+}
+
+.colofon-hours {
+    grid-area: hours;
+}
+
+.form {
+    grid-area: form;
+}

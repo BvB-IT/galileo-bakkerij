@@ -1,0 +1,280 @@
+@import url(/css/style.css);
+
+@media (min-width: 820px) {
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-areas: "logo main-nav";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background-color: blue;
+    height: 5rem;
+    width: 100vw;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.logo {
+    grid-area: logo;
+    background-image: url(/assets/images/logo_large.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-menu-toggle {
+    grid-area: main-nav;
+    place-self: center;
+    /* display: none; */
+}
+
+.nav-main-grid  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "home over_ons contact";
+    font-size: larger;
+    text-decoration: none;   
+}
+
+#home {
+    grid-area: home;
+}
+
+#over_ons {
+    grid-area: over_ons;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+.nav-main-grid a {
+    text-decoration: none;
+    color: black
+}
+
+.nav-main-grid a:hover {
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+.mobile-menu-toggle {
+    grid-area: mobile-nav;
+    display: none;
+}
+
+ .mobile-nav .mobile-menu-items {place-self: center;
+    display: none;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(154, 192, 204, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+}
+
+@media (max-width: 800px) { 
+    
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "logo mobile-nav";
+        background-color: rgb(67, 30, 30);
+        height: 5rem;
+        justify-content: center;
+        align-content: center;
+      }
+
+    .logo {
+        grid-area: logo;
+        background-image: url(/assets/images/logo_small.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .main-menu-toggle {
+        grid-area: main-nav;
+        place-items: center;
+        display: none;
+        }
+
+      .main-nav {
+        grid-area: main-nav;
+        place-items: center;
+        margin: 1rem 25rem 1rem 25rem;
+      }
+
+    .mobile-menu-toggle {
+        grid-area: mobile-nav;
+        margin: 1rem;
+        /* display: none; */
+    }
+
+    /* .mobile-menu-items {
+        display: none; 
+    } */
+
+    .mobile-menu-items.active {
+        display: block;
+    }
+
+    .mobile-menu-toggle:hover {
+        cursor: pointer; /* Indicates interactivity */
+    }
+    
+    
+    .mobile-nav .mobile-menu-toggle .mobile-menu-items {
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(154, 192, 204, 0.5);
+        text-align: center;
+        transition: transform 0.3s ease;
+        /* transform: translateX(100%); */
+        color: black;
+    }
+    
+    .mobile-nav .mobile-menu-toggle .mobile-menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding-top: 300px;
+        gap: 2rem;
+        font-size: 1.2rem;
+        color: red;
+    }
+
+    .mobile-nav .mobile-menu-toggle {
+        cursor: pointer;
+    }
+
+    .mobile-nav .mobile-menu-toggle .mobile-menu-items.active {
+        transform: translateX(0);
+    }
+
+    .mobile-nav .mobile-menu-toggle {
+        display: block;
+    }
+
+} 
+
+/* @media (min-width:800px) { 
+
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-areas: "logo main-nav";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        background-color: white;
+        height: 5rem;
+        margin-left: 25rem;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .main-nav {
+        grid-area: main-nav;
+        place-items: center;
+        margin: 1rem 25rem 1rem 25rem;
+      }
+
+    .logo {
+        grid-area: logo;
+        background-image: url(/assets/images/logo_large.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .mobile-nav {
+        grid-area: main-nav; 
+        align-content: center;
+    }
+    
+    .mobile-nav .mobile-menu-items {
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(154, 192, 204, 0.5);
+        text-align: center;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+        color: black;
+    }
+    
+    .mobile-nav .mobile-menu-list {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+    display: none;
+    }
+
+} 
+
+@media (min-width:360px) { 
+
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-areas: "logo main-nav";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        background-color: white;
+        height: 5rem;
+        margin-left: 25rem;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .main-nav {
+        grid-area: main-nav;
+        place-items: center;
+        margin: 1rem 25rem 1rem 25rem;
+      }
+
+    .logo {
+        grid-area: logo;
+        background-image: url(/assets/images/logo_large.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .mobile-nav {
+        grid-area: main-nav; 
+        align-content: center;
+    }
+    
+    .mobile-nav .mobile-menu-items {
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(154, 192, 204, 0.5);
+        text-align: center;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+        color: black;
+    }
+    
+    .mobile-nav .mobile-menu-list {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+    display: none;
+    }
+} */
