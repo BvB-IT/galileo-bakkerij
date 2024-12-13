@@ -53,6 +53,18 @@
     grid-area: contact;
 }
 
+#home-mobile {
+    grid-area: home;
+}
+
+#over_ons-mobile {
+    grid-area: over_ons;
+}
+
+#contact-mobile {
+    grid-area: contact;
+}
+
 .nav-main-grid a {
     text-decoration: none;
     color: black
