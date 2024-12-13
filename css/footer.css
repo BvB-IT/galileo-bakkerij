@@ -4,7 +4,6 @@
     grid-column: 1 / 3;
     grid-row: 5 / 6;
     background-color: #D8BC69;
-    display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -16,8 +15,6 @@
 
 .disclaimer {
     grid-area: disclaimer;
-    align-content: center;
-    justify-content: center;
     margin-left: 14rem;
 }
 
@@ -63,7 +60,9 @@
     }
 
     .disclaimer {
+        display: grid;
         grid-area: disclaimer;
+        margin: 0;
     }
 
     .footer-nav {
