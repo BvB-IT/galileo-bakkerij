@@ -1,3 +1,4 @@
+
 /* Importing Lato and Roboto fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
@@ -11,34 +12,31 @@ h1, h2, h3, h4, h5, h6 {
 body, p, div, span, a, li {
     font-family: 'Roboto', sans-serif;
 }
-
 .hero {
-    display: grid;
-    background-image: url(/assets/images/Image-6.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    margin-bottom: 1rem;
-    opacity: 0.9;
-    filter: brightness(0.7);
-    z-index: -1;
-  }
+  display: grid;
+  background-image: url(/assets/images/Image-6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  margin-bottom: 1rem; 
+}
 
-#hero-text {
-    color: white;
-    align-content: center;
-    text-align: center;
+.overlay {
+  height: 14rem;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  /* filter: brightness(0.9); */
 }
 
 .heading-1 {
+  color: white;
+  align-content: center;
+  text-align: center;
+  padding-top: 4rem; 
   font-size: 80px;
-  color: black;
-  position: absolute;
-  width: min-content;
-  align-self: center;
-  justify-self: center;
 }
 
 .article-container {
