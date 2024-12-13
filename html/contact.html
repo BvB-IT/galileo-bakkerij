@@ -9,60 +9,51 @@
       <!-- Add the Reset CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <!-- <link rel="stylesheet" href="/css/header.css"> -->
-    <!-- <link rel="stylesheet" href="/css/footer.css"> -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="icon" href="/assets/images/logo_small_icon_only.png" type="image/x-icon">
 </head>
 <body>
     <div class="main-container">
-        <header class="header">
-            <!-- <figure class="logo"></figure>   
-            <nav class="main-nav">
-                <ul class="nav-main-grid">
-                    <li id="home"><a href="home.html">Home</a></li>
-                    <li id="over_ons"><a href="over_ons.html">Over Ons</a></li>
-                    <li id="contact"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav> -->
-        </header>
+        <header class="header" id="header"></header>
         <div class="hero">
-            <div class="heading-1" id="hero-text">about</div>
+            <div class="heading-1" id="hero-text">contact</div>
         </div> 
-        <main class="form-container">
-            <div class="colofon-head">Hier kunt u ons vinden!</div>
-                <div>Adres</div>
-            <div class="colofon-adres">
-                <div>Telefoonnummer</div>
+        <main class="article-container">
+            <div class="form-container">
+                <div class="contact-info">
+                    <div class="colofon-head">Hier kunt u ons vinden!</div>
+                    <div>Adres</div>
+                    <div>Hollands Diep 61c 2904 Ep, Capelle aan den IJssel</div>
+                    <div>Telefoonnummer</div>
+                    <div>+31 612345678</div>
+                    <div>Email</div>
+                    <div>info@bakkerij.nl</div>
+                    <div>Openingstijden</div>
+                    <div>
+                        Maandag		| 8:00 - 17:00 <br>
+                        Dinsdag		| 8:00 - 17:00 <br>
+                        Woensdag	| 8:00 - 17:00 <br>
+                        Donderdag	| 8:00 - 17:00 <br>
+                        Vrijdag		| 8:00 - 20:00 <br>
+                        Zaterdag	| 8:00 - 17:00 <br>
+                        Zondag		| Gesloten
+                    </div>
+                </div>
+                <form class="form" method="post">
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam">
+                    <label for="email">Email adres</label>
+                    <input type="text" id="email">
+                    <label for="telefoonnummer">Telefoonnummer</label>
+                    <input type="text" id="telefoonnummer">
+                    <label for="bericht">Bericht</label>
+                    <input type="text" id="bericht">    
+                </form>
             </div>
-            <div class="colofon-phone"></div>
-                <div>Email</div>
-            <div class="colofon-email"></div>
-                <div>Openingstijden</div>
-            <div class="colofon-hours"></div>
-            <form class="form" method="post">
-                <label for="">Naam</label>
-                <input type="text">
-                <label for="">Email adres</label>
-                <input type="text">
-                <label for="">Telefoonnummer</label>
-                <input type="text">
-                <label for="">Bericht</label>
-                <input type="text">    
-            </form>
-
+            
         </main>
         <footer class="footer-container" id="footer">
-            <!-- <div class="disclaimer">© 2021 - Bakkerij</div>
-            <div class="footer">    
-                <nav class="footer-nav">
-                    <ul class="nav-footer-grid">
-                        <li id="home"><a href="home.html">Home</a></li>
-                        <li id="over_ons"><a href="over_ons.html">Over Ons</a></li>
-                        <li id="contact"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div> -->
         </footer>
     </div> 
 </body>

@@ -1,6 +1,3 @@
-/* @import url(/css/reset.min.css); */
-@import url(/css/style.css);
-/* Importing Lato and Roboto fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 .hero {
@@ -12,7 +9,25 @@
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     margin-bottom: 1rem;
+    opacity: 0.9;
+    filter: brightness(0.7);
+    z-index: -1;
   }
+
+#hero-text {
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+.heading-1 {
+  font-size: 80px;
+  color: black;
+  position: absolute;
+  width: min-content;
+  align-self: center;
+  justify-self: center;
+}
 
 .article-container {
     grid-area: articles;
@@ -41,7 +56,6 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-    /* width: 100%; */
     height: 15rem;
   }
 
@@ -69,8 +83,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    /* object-fit: cover; */
-    /* width: 100%; */
     height: 15rem;
   } 
 
@@ -131,7 +143,6 @@
     .about {
       grid-area: text-about;
       font-size: 18px;
-
   }
 
     .article-head {
