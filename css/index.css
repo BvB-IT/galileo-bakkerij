@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 body, p, div, span, a, li {
     font-family: 'Roboto', sans-serif;
 }
+
 .hero {
   display: grid;
   background-image: url(/assets/images/Image-6.jpg);
@@ -28,7 +29,6 @@ body, p, div, span, a, li {
   width: 100%;
   background-color: black;
   opacity: 0.5;
-  /* filter: brightness(0.9); */
 }
 
 .heading-1 {

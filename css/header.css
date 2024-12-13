@@ -1,5 +1,11 @@
 @import url(/css/style.css);
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 @media (min-width: 820px) {
 .header {
     display: grid;
@@ -51,18 +57,6 @@
 }
 
 #contact {
-    grid-area: contact;
-}
-
-#home-mobile {
-    grid-area: home;
-}
-
-#over_ons-mobile {
-    grid-area: over_ons;
-}
-
-#contact-mobile {
     grid-area: contact;
 }
 
@@ -133,6 +127,18 @@
         text-align: center;
         font-size: 3rem;
         transition: .3s ease;
+    }
+
+    #home-mobile {
+        grid-area: home;
+    }
+    
+    #over_ons-mobile {
+        grid-area: over_ons;
+    }
+    
+    #contact-mobile {
+        grid-area: contact;
     }
     
     nav {
