@@ -1,4 +1,16 @@
+/* Importing Lato and Roboto fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Apply Lato to heade@import url(/css/reset.min.css);
+@import url(/css/style.css);r elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Apply Roboto to the rest of the text */
+body, p, div, span, a, li {
+    font-family: 'Roboto', sans-serif;
+}
 
 .hero {
     display: grid;

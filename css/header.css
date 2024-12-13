@@ -39,6 +39,7 @@
     text-decoration: none;
     gap: 1rem;
     margin-right: 15rem;
+    font-size: 18px;
 }
 
 #home {
@@ -109,6 +110,7 @@
 
       .mobile-menu-toggle.active {
         right: 0;
+        background-color: #D8BC69;
     }
 
     .ham-menu:hover {
@@ -141,7 +143,6 @@
     }
     
     .ham-menu {
-        /* grid-area: mobile-nav; */
         background-color: white;
         height: 50px;
         width: 40px;
@@ -150,7 +151,6 @@
     }
     
     .ham-menu span {
-        /* grid-area: mobile-nav; */
         height: 8px;
         width: 100%;
         background-color: #D8BC69;
@@ -169,7 +169,7 @@
         top: 75%;
     }
     .ham-menu.active span {
-        background-color: white;
+        background-color: #D8BC69;
     }
     .ham-menu.active span:nth-child(1) {
         top: 50%;
