@@ -79,13 +79,11 @@ form {
 }
 
 form label {
-    /* grid-column: 1; */
     font-weight: bold;
     align-self: center;
 }
 
 form input {
-    /* grid-column: 2; */
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
