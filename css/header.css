@@ -94,6 +94,7 @@ a {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        margin: 0;
     }
 
     .main-menu-toggle {
