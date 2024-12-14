@@ -11,5 +11,5 @@ function loadHTML(elementId, file) {
 }
 
 // Load header and footer
-loadHTML('header', '/html/header.html');
-loadHTML('footer', '/html/footer.html');
+loadHTML('header', '../html/header.html');
+loadHTML('footer', '../html/footer.html');
