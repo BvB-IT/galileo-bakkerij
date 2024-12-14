@@ -1,4 +1,4 @@
-@import url(/css/reset.min.css);
+@import url(../css/reset.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 .main-container {
@@ -14,7 +14,7 @@
 
 .hero {
         display: grid;
-        background-image: url(/assets/images/Image-6.jpg);
+        background-image: url(../assets/images/Image-6.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

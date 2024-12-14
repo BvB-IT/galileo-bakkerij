@@ -1,4 +1,4 @@
-@import url(/css/reset.min.css);
+@import url(../css/reset.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 .main-container {
@@ -14,7 +14,7 @@
 
 .hero {
     display: grid;
-    background-image: url(/assets/images/Image-4.jpg);
+    background-image: url(../assets/images/Image-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -79,7 +79,7 @@
 
 .image4 {
     grid-area: image;
-    background-image: url(/assets/images/Image-5.jpg);
+    background-image: url(../assets/images/Image-5.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,7 +147,7 @@
 }
 
 .product1 {
-    background-image: url(/assets/images/Image-1.jpg);
+    background-image: url(../assets/images/Image-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,9 +173,10 @@
 
     .article1-container  {
         grid-column: 1 / 3;
-        grid-row: 3 / 4;   .hero {
+        grid-row: 3 / 4;   
+        /* .hero {
             font-size: 355px;
-        }
+        } */
         display: grid;
         width: 50%;
         place-self: center;
