@@ -19,7 +19,7 @@ a {
 
 .logo {
     grid-area: logo;
-    background-image: url(/assets/images/logo_large.png);
+    background-image: url(../assets/images/logo_large.png);
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
@@ -90,7 +90,7 @@ a {
     .logo {
         grid-area: logo;
         width: 100%;
-        background-image: url(/assets/images/logo_small.png);
+        background-image: url(../assets/images/logo_small.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
