@@ -11,5 +11,5 @@ function loadHTML(elementId, file) {
 }
 
 // Load header and footer
-loadHTML('header', 'header.html');
+loadHTML('header', 'https://bvb-it.github.io/bakkerij-galileo/html/header.html');
 loadHTML('footer', 'footer.html');
