@@ -15,7 +15,7 @@ body, p, div, span, a, li {
 
 .hero {
   display: grid;
-  background-image: url(/assets/images/Image-6.jpg);
+  background-image: url(../assets/images/Image-6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -61,7 +61,7 @@ body, p, div, span, a, li {
 
   .image1 {
     grid-area: image1;
-    background-image: url(/assets/images/Image-4.jpg);
+    background-image: url(../assets/images/Image-4.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,7 +89,7 @@ body, p, div, span, a, li {
 
 .image2 {
     grid-area: image2;
-    background-image: url(/assets/images/Image-2.jpg);
+    background-image: url(../assets/images/Image-2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -143,7 +143,7 @@ body, p, div, span, a, li {
     }
     
     .image1::before {
-        background-image: url(/assets/images/Image-4.jpg);   
+        background-image: url(../assets/images/Image-4.jpg);   
     }
     
     .image1 {
@@ -179,7 +179,7 @@ body, p, div, span, a, li {
     
     .image2::before {
         grid-area: image2;
-        background-image: url(/assets/images/Image-2.jpg);
+        background-image: url(../assets/images/Image-2.jpg);
     }
     
     .image2 {
