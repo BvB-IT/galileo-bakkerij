@@ -82,6 +82,7 @@ a {
         grid-template-areas: "logo mobile-nav";
         background-color: white;
         width: 100%;
+        max-width: 480px;
         height: 5rem;
         justify-content: center;
         align-content: center;
@@ -202,6 +203,7 @@ a {
         grid-template-areas: "logo mobile-nav";
         background-color: white;
         width: 100%;
+        max-width: 1024px;
         height: 5rem;
         justify-content: center;
         align-content: center;
