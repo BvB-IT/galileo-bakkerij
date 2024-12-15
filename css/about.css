@@ -43,7 +43,7 @@
     grid-column: 1 / 3;
     grid-row: 3 / 4;
     display: grid;
-    width: 100%;
+    /* width: 100%; */
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
@@ -51,10 +51,11 @@
 }
 
 .article1-container  {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
+    /* grid-column: 1 / 3;
+    grid-row: 3 / 4; */
+    grid-area: aboutus;
     display: grid;
-    width: 50%;
+    /* width: 50%; */
     place-self: center;
     gap: 1rem;
     grid-template-columns: auto;
