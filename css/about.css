@@ -28,7 +28,6 @@
     width: 100%;
     background-color: black;
     opacity: 0.5;
-    /* filter: brightness(0.9); */
   }
 
   .heading-1 {
@@ -40,7 +39,7 @@
 }
 
 .article-container {
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: auto;
@@ -50,10 +49,9 @@
 }
 
 .article1-container  {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+
+    grid-area: aboutus;
     display: grid;
-    width: 100%;
     gap: 1rem;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
@@ -63,6 +61,7 @@
                         "image"
                         "bottom-text"
                         "cards";
+    margin: 2rem 25rem 2rem 25rem;
 }
 
 .article-head {
@@ -78,13 +77,13 @@
 .image4 {
     grid-area: image;
     background-image: url(../assets/images/Image-5.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 10rem;
+    height: 15rem;
     margin: 2rem; 
-    color: black;
-}
+};
+ 
+
 
 .bottom-text {
     grid-area: bottom-text;
@@ -174,7 +173,7 @@
         grid-column: 1 / 3;
         grid-row: 3 / 4;
         display: grid;
-        /* width: 100%; */
+        width: 100%;
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-template-areas:
@@ -182,12 +181,11 @@
     }
 
     .article1-container  {
-        /* grid-column: 1 / 3;
-        grid-row: 3 / 4;    */
-        grid-area: aboutus;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;   
         display: grid;
         width: 100%;
-        max-width: 800px;
+        max-width: 100VW;
         gap: 1rem;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto;
@@ -279,14 +277,42 @@
 @media screen and (min-width: 360px) and (max-width: 480px) {
 
     .main-container {
-        width: 100%;
+        width: 100vw;
+        /* max-width: 480px; */
+
     }
 
-    .article-container {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
+    .hero {
         display: grid;
-        margin: 1rem;
+        background-image: url(../assets/images/Image-4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin-bottom: 1rem; 
+    }
+
+    .overlay {
+        height: 14rem;
+        width: 100%;
+        max-width: 100vw;
+        background-color: black;
+        opacity: 0.5;
+      }
+
+      .heading-1 {
+        color: white;
+        align-content: center;
+        text-align: center;
+        padding-top: 4rem; 
+        font-size: 80px;
+      }
+
+    .article-container {
+        width: 100vw;
+        grid-area: articles;
+        display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-template-areas:
@@ -294,11 +320,11 @@
     }
 
     .article1-container  {
-        grid-column: 1 / 2;
-        grid-row: 1/ 2;   
+        grid-area: aboutus;
+        /* grid-column: 1 / 2;
+        grid-row: 1/ 2;    */
+        margin: 1rem;
         display: grid;
-        /* margin: 1rem; */
-
         gap: 1rem;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto;
@@ -310,14 +336,41 @@
                             "cards";
     }
 
+    .article-head {
+        grid-area: head;
+        font-size: 24px;
+    }
+    
+    .top-text {
+        grid-area: top-text;
+        color: black;
+    }
+    
+    .image4 {
+        grid-area: image;
+        background-image: url(../assets/images/Image-5.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 10rem;
+        margin: 2rem; 
+        color: black;
+    }
+    
+    .bottom-text {
+        grid-area: bottom-text;
+        color: black;
+    }
+
     .test-container {
         display: flex;
         flex-direction: column;
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
+        grid-area: cards;
+        /* grid-column: 1 / 2;
+        grid-row: 5 / 6; */
         margin-top: 5rem;
         margin-bottom: 5rem;
-        margin-left: 1.1rem;
+        /* margin-left: 1.1rem; */
         place-items: center;
     }
     
