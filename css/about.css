@@ -4,7 +4,6 @@
 .main-container {
     display: grid;
     grid-template-columns: auto;
-    max-width: 800px;
     grid-template-rows: auto 15rem auto auto;
     grid-template-areas: 
                         "header"
@@ -172,7 +171,108 @@
     width: 20rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 768px) {
+
+    .article-container {
+        margin-left: 1rem;
+    }
+
+    .article1-container  {
+        /* grid-column: 1 / 3;
+        grid-row: 3 / 4;    */
+        grid-area: aboutus;
+        display: grid;
+        width: 100%;
+        max-width: 800px;
+        gap: 1rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+                            "head"
+                            "top-text"
+                            "image"
+                            "bottom-text"
+                            "cards";
+    }
+
+    .test-container {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 1.1rem;
+        place-items: center;
+    }
+    
+
+    .flex1 { 
+        display: flex;
+        border: 5px solid #D8BC69;
+        flex-direction: column;
+        width: 20rem;
+        border-radius: 5px;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .product-head {
+        margin: 1rem 0 1rem 1rem;
+    }
+    
+    .social-media-icons {
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+    }
+    
+    .fab.fa-facebook {
+        color: #D8BC69;
+        padding: 0.5rem;
+    }
+    
+    .fab.fa-twitter {
+        color: #D8BC69;
+        padding: 0.5rem;
+    }
+    
+    .fab.fa-instagram {
+        color: #D8BC69;
+        padding: 0.5rem;
+    }
+    
+    .fab.fa-linkedin {
+        color: #D8BC69;
+        padding: 0.5rem;
+    }
+    
+    .product1 {
+        background-image: url(/assets/images/Image-1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 350px;
+        margin: 1rem 0 1rem 2.5rem;
+    }
+    
+    .product-description {
+        display: flex;
+        margin: 1rem;
+    }
+    
+    .flex2 {
+        display: flex;
+        border: 5px solid #D8BC69;
+        border-radius: 5px;
+        flex-direction: column;
+        width: 20rem;
+    }
+}
+
+
+@media (max-width: 768px) {
 
     .article-container {
         margin-left: 1rem;
