@@ -85,18 +85,18 @@ a {
         width: 100%;
         max-width: 480px;
         height: 5rem;
-        justify-content: center;
+        justify-content: left;
         align-content: center;
       }
 
     .logo {
+        display: flex;
         grid-area: logo;
-        width: 100%;
         background-image: url(../assets/images/logo_small.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
-        margin: 0;
+        background-position: left;
+        margin-left:  1rem;
     }
 
     .main-menu-toggle {
@@ -153,6 +153,7 @@ a {
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
+        margin-left: 0.5rem;
         background-color: white ;
 
     }

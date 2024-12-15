@@ -21,6 +21,7 @@ body, p, div, span, a, li {
 
 .main-container {
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: auto auto;
     grid-template-rows: auto 15rem auto auto;
     grid-template-areas: 
