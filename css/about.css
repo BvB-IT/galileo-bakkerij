@@ -427,9 +427,9 @@
     }
     
     .product1 {
-        display: block;
+        /* display: block; */
         width: 100vw;
-        background-image: url(/assets/images/Image-1.jpg);
+        background-image: url(../assets/images/Image-1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
