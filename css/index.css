@@ -4,6 +4,7 @@
 
 /* Apply Lato to heade@import url(/css/reset.min.css);
 @import url(/css/style.css);r elements */
+@import url(/css/style.css);r elements
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
 }
