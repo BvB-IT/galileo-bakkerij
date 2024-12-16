@@ -374,7 +374,7 @@
 
     .test-container {
         display: grid;
-        width: 85%;
+        width: 90%;
         grid-area: cards;
         margin-top: 5rem;
         margin-bottom: 5rem;
@@ -425,6 +425,7 @@
     }
     
     .product1 {
+        width: 100vw;
         background-image: url(/assets/images/Image-1.jpg);
         background-position: center;
         background-size: cover;
