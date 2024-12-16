@@ -4,7 +4,7 @@
 
 /* Apply Lato to heade@import url(/css/reset.min.css);
 @import url(/css/style.css);r elements */
-@import url(/css/style.css);r elements
+/* @import url(/css/style.css); */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
 }
@@ -12,6 +12,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Apply Roboto to the rest of the text */
 body, p, div, span, a, li {
     font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 15rem auto auto;
+  grid-template-areas: 
+                      "header"
+                      "hero"
+                      "articles"
+                      "footer";
 }
 
 .hero {
