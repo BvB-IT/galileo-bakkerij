@@ -211,7 +211,10 @@ a {
 } 
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
-    
+    .hero {
+        display: none;
+    }
+
     .header {
         display: grid;
         grid-area: header;
