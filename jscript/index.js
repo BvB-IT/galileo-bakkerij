@@ -10,6 +10,5 @@ function loadHTML(elementId, file) {
         .catch(error => console.error('Error loading HTML:', error));
 }
 
-// Load header and footer
 loadHTML('header', 'header.html');
 loadHTML('footer', 'footer.html');

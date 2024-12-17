@@ -10,7 +10,7 @@
                         "hero"
                         "articles"
                         "footer";
-  }
+}
 
 .hero {
     grid-column: 1 / 2;
@@ -30,7 +30,7 @@
     max-width: 100vw;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
+}
 
 .heading-1 {
     color: white;
@@ -84,8 +84,6 @@
     height: 15rem;
     margin: 2rem; 
 };
- 
-
 
 .bottom-text {
     grid-area: bottom-text;
@@ -279,15 +277,15 @@
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
 
-.main-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 15rem auto auto;
-    grid-template-areas: 
-                        "header"
-                        "hero"
-                        "articles"
-                        "footer";
+    .main-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 15rem auto auto;
+        grid-template-areas: 
+                            "header"
+                            "hero"
+                            "articles"
+                            "footer";
   }
 
     .hero {
