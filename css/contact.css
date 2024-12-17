@@ -43,7 +43,6 @@
         grid-column: 1 / 3;
         grid-row: 3 / 4;
         width: 100%;
-        /* margin: 3rem; */
         place-self: center;
         display: grid;
         grid-template-columns: auto;
@@ -56,19 +55,113 @@
     grid-area: form;
     display: grid;
     place-self: center;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "colofon   formdata";
     gap: 2rem;
     padding: 6rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);    
+}
+
+.contact-info {
+    grid-area: colofon;
     justify-content: center;
+}
+
+.form {
+    grid-area: formdata;
+    justify-content: center;
+    margin: o;
+}
+
+.formm div {
+    font-weight: bold;
 }
 
 .colofon-head {
     border-bottom: 1px solid #D8BC69;
+    font-weight: bold;
+}
+
+.colofon-head2 {
+    display: grid;
+    font-weight: bold;
+}
+
+#adres {
+    margin-top: 0.5rem;
+}
+
+.weektable {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+                        "mon    mon1"
+                        "tue    tue1"
+                        "wed    wed1"
+                        "thu    thu1"
+                        "fri    fri1"
+                        "sat    sat1"
+                        "sun    sun1";
+}
+
+#mon {
+    grid-area: mon;
+}
+#mon1 {
+    grid-area: mon1;
+}
+
+#tue {
+    grid-area: tue;
+}
+
+#tue1 {
+    grid-area: tue1;
+}
+
+#wed {
+    grid-area: wed;
+}
+
+#wed1 {
+    grid-area: wed1;
+}
+
+#thu {
+    grid-area: thu;
+}
+
+#thu1 {
+    grid-area: thu1;
+}
+
+#fri {
+    grid-area: fri;
+}
+
+#fri1 {
+    grid-area: fri1;
+}
+
+#sat {
+    grid-area: sat;
+}
+
+#sa1 {
+    grid-area: sat1;
+}
+
+#sun {
+    grid-area: sun;
+}
+
+#sun1 {
+    grid-area: sun1;
 }
 
 .contact-info {
@@ -79,8 +172,8 @@
 }
 
 .contact-info div:nth-child(odd) {
-    font-weight: bold;
-    color: #007BFF;
+    
+    color: black;
 }
 
 .contact-info div:nth-child(even) {
@@ -109,24 +202,72 @@ form input {
 }
 
 form input:focus {
-    border-color: #007BFF;
+    border-color:  #BF9D39;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px rgba(191, 157, 57, 00.5rem);
+    background-color: #e7e4e4;
 }
+
+textarea {
+    border-color: Kleuren
+    Primary #D8BC69;
+    border: solid 1px #ccc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(191, 157, 57, 0.5);
+    background-color: white;
+}
+
+textarea:focus {
+    border-color: #BF9D39;
+    outline: none;
+    box-shadow: 0 0 5px rgba(191, 157, 57, 0.5);
+    background-color: #e7e4e4;
+}
+
+
+.button {
+    background-color: #D8BC69;
+    width: 8rem;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    border: solid 0px;
+    justify-self: end;
+  }
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
-    .article-container {
-        max-width: 100vw;
-    }
-    
+    /* .article-container {
+        grid-area: articles;
+        max-width: 85%;
+        margin: 0;
+    } */
+
     .form-container {
-        grid-template-columns: 1fr; 
+        grid-area: form;
+        place-self:unset;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+                            "colofon"
+                            "formdata";
+        gap: 2rem;
+        padding: 0.5rem;
+        /* max-width: 360px; */
+        margin: 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
-    form {
-        grid-template-columns: 1fr; 
+
+    .form {
+        grid-area: formdata;
+        grid-template-columns: auto;
+        margin: 0; 
+        max-width: 360px;
     }
 
     form label, form input {

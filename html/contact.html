@@ -7,6 +7,7 @@
     <title>contact</title>
     <script src="../jscript/index.js" defer></script>
     <script src="../jscript/hamburger.js" defer></script>
+    <script src="../jscript/form.js" defer></script>
       <!-- Add the Reset CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="../css/contact.css">
@@ -28,32 +29,33 @@
             <div class="form-container">
                 <div class="contact-info">
                     <div class="colofon-head">Hier kunt u ons vinden!</div>
-                    <div>Adres</div>
+                    <div class="colofon-head2" id="adres">Adres</div>
                     <div>Hollands Diep 61c 2904 Ep, Capelle aan den IJssel</div>
-                    <div>Telefoonnummer</div>
+                    <div class="colofon-head2">Telefoonnummer</div>
                     <div>+31 612345678</div>
-                    <div>Email</div>
+                    <div class="colofon-head2">Email</div>
                     <div>info@bakkerij.nl</div>
-                    <div>Openingstijden</div>
-                    <div>
-                        Maandag		| 8:00 - 17:00 <br>
-                        Dinsdag		| 8:00 - 17:00 <br>
-                        Woensdag	| 8:00 - 17:00 <br>
-                        Donderdag	| 8:00 - 17:00 <br>
-                        Vrijdag		| 8:00 - 20:00 <br>
-                        Zaterdag	| 8:00 - 17:00 <br>
-                        Zondag		| Gesloten
-                    </div>
+                    <div class="colofon-head2">Openingstijden</div>
+                        <div class="weektable">
+                            <div id="mon">Maandag</div><div id="mon1">| 8:00 - 17:00</div>
+                            <div id="tue">Dinsdag</div><div id="tue1">| 8:00 - 17:00</div>
+                            <div id="wed">woensdag</div><div id="wed1">| 8:00 - 17:00</div>
+                            <div id="thu">Donderdag</div><div id="thu1">| 8:00 - 17:00</div>
+                            <div id="fri">Vrijdag</div><div id="fri1">| 8:00 - 20:00</div>
+                            <div id="sat">Zatersdag</div><div id="sat1">| 8:00 - 17:00</div>
+                            <div id="sun">Zondag</div><div id="sun1">| gesloten</div>
+                        </div>
                 </div>
                 <form class="form" method="post">
                     <label for="naam">Naam</label>
-                    <input type="text" id="naam">
+                    <input type="text" id="naam" required minlength="8" maxlength="22" placeholder="naam">
                     <label for="email">Email adres</label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" required minlength="8" maxlength="20" placeholder="Email">
                     <label for="telefoonnummer">Telefoonnummer</label>
-                    <input type="text" id="telefoonnummer">
+                    <input type="text" id="telefoonnummer" placeholder="telefoonnummer" minlength="10" maxlength="10" pattern="[\d]{7,14}" required>
                     <label for="bericht">Bericht</label>
-                    <input type="text" id="bericht">    
+                    <textarea id="message" name="message" rows="10" placeholder="laat hier je bericht achter" required></textarea> 
+                    <button class="button" type="submit">verzenden</button>  
                 </form>
             </div>
             
