@@ -349,7 +349,6 @@
     }
 
     .article-head {
-
         grid-area: head;
         font-size: 24px;
         margin: 1rem;  
@@ -398,7 +397,6 @@
         border-radius: 5px;
         place-content: center;
         margin-bottom: 2rem;
-
     }
     
     .product-head {
@@ -432,7 +430,6 @@
     }
     
     .product1 {
-        /* display: block; */
         width: 100vw;
         background-image: url(../assets/images/Image-1.jpg);
         background-position: center;

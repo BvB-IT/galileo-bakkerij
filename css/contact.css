@@ -242,12 +242,6 @@ textarea:focus {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
-    /* .article-container {
-        grid-area: articles;
-        max-width: 85%;
-        margin: 0;
-    } */
-
     .form-container {
         grid-area: form;
         place-self:unset;
@@ -258,7 +252,6 @@ textarea:focus {
                             "formdata";
         gap: 2rem;
         padding: 0.5rem;
-        /* max-width: 360px; */
         margin: 0;
         background-color: #fff;
         border-radius: 10px;
