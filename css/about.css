@@ -19,15 +19,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    filter: brightness(0.9); 
 }
 
-.overlay {
-    height: 14rem;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
+.hero::before {
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 100vw;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
   }
 
 .heading-1 {
@@ -36,6 +38,7 @@
     text-align: center;
     padding-top: 4rem; 
     font-size: 80px;
+    z-index: 2;
 }
 
 .article-container {
@@ -285,7 +288,6 @@
                         "hero"
                         "articles"
                         "footer";
-    
   }
 
     .hero {
@@ -297,15 +299,6 @@
         grid-row: 2 / 3;
         margin-bottom: 1rem;
     }
-
-    /* .overlay {
-        height: 14rem;
-        width: 100%;
-        max-width: 100vw;
-        background: rgba(0, 0, 0, 0.5);
-        opacity: 0.5;
-        z-index: 1;
-      } */
 
     .hero::before {
         height: 14rem;

@@ -34,26 +34,18 @@ body, p, div, span, a, li {
   background-position: center;
   grid-column: 1 / 3;
   grid-row: 2 / 3;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
+  filter: brightness(0.9); 
 }
 
 .hero::before {
-  /* height: 14rem; */
   position: absolute;
   width: auto;
   height: auto;
   max-width: 100vw;
   background: rgba(0, 0, 0, 0.2);
-  /* filter: brightness(0.9); */
   z-index: 1;
 }
-
-/* .overlay {
-  height: 14rem;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-} */
 
 .heading-1, p {
   color: white;
