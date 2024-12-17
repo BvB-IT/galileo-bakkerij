@@ -1,10 +1,16 @@
+/* @import url(../css/style.css); */
+@import url(../css/reset.min.css);
 a {
     text-decoration: none;
     color: black;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 3840px) {
-.header {
+    .hero {
+        display: none;
+    }
+
+    .header {
     display: grid;
     grid-area: header;
     grid-template-columns: auto auto;
@@ -70,8 +76,13 @@ a {
 
 }
 
+
+
 @media screen and (min-width: 360px) and (max-width: 480px) {
     
+    .hero {
+        display:none;
+    }
     .header {
         display: grid;
         grid-area: header;
@@ -152,6 +163,7 @@ a {
         padding: 0;
         margin-left: 0.5rem;
         background-color: white ;
+
     }
     
     .ham-menu {
