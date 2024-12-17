@@ -1,10 +1,7 @@
-/* @import url(../css/style.css); */
-
 a {
     text-decoration: none;
     color: black;
 }
-
 
 @media screen and (min-width: 1024px) and (max-width: 3840px) {
 .header {
@@ -155,7 +152,6 @@ a {
         padding: 0;
         margin-left: 0.5rem;
         background-color: white ;
-
     }
     
     .ham-menu {
@@ -188,6 +184,7 @@ a {
     }
     .ham-menu.active span:nth-child(1) {
         top: 50%;
+        background-color: black;
         transform: translate(-50%, -50%) rotate(45deg);
     }
     .ham-menu.active span:nth-child(2) {
@@ -195,6 +192,7 @@ a {
     }
     .ham-menu.active span:nth-child(3) {
         top: 50%;
+        background-color: black;
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 

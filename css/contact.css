@@ -86,6 +86,7 @@
 
 .colofon-head {
     border-bottom: 1px solid #D8BC69;
+    padding-bottom: 1rem;
     font-weight: bold;
 }
 
@@ -95,7 +96,7 @@
 }
 
 #adres {
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 .weektable {
