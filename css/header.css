@@ -6,11 +6,11 @@ a {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 3840px) {
-    .hero {
+    /* .hero {
         display: none;
-    }
+    } */
 
-    .header {
+.header {
     display: grid;
     grid-area: header;
     grid-template-columns: auto auto;
@@ -80,9 +80,10 @@ a {
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
     
-    .hero {
-        display:none;
+    .hero.active {
+        display: none;
     }
+    
     .header {
         display: grid;
         grid-area: header;
@@ -113,10 +114,12 @@ a {
         display: none;
     }
 
-      .mobile-menu-toggle.active {
+    .mobile-menu-toggle.active {
         right: 0;
         background-color: #D8BC69;
     }
+
+
 
     .ham-menu:hover {
         cursor: pointer;

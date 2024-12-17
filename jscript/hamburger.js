@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.target.closest(".ham-menu")) {
             const hamMenu = event.target.closest(".ham-menu");
             const toggleMenu = document.querySelector(".mobile-menu-toggle");
-            if (hamMenu && toggleMenu) {
+            const toggleHero = document.querySelector(".hero");
+            if (hamMenu && toggleMenu && toggleHero) {
                 console.log('Elements found: toggleButton and mobileMenu');
                 hamMenu.classList.toggle("active");
                 toggleMenu.classList.toggle("active");
+                toggleHero.classList.toggle("active");
             } else onsole.error('hamMenu or toggleMenu not found');
         }
     });
