@@ -44,14 +44,15 @@
                             <div id="sun">Zondag</div><div id="sun1">| gesloten</div>
                         </div>
                 </div>
-                <form class="form" method="post">
+                <form name="contactForm" class="form" method="post" novalidate>
                     <label for="naam">Naam</label>
-                    <input type="text" id="naam" required minlength="8" maxlength="22" placeholder="naam">
+                    <input type="text" id="name" required minlength="8" maxlength="22" placeholder="naam" enterkeyhint="next">
+                    <span class="instructions"><span class="errMessage"></span></span>
                     <label for="email">Email adres</label>
                     <input type="text" id="email" required minlength="8" maxlength="20" placeholder="Email">
-                    <label for="telefoonnummer">Telefoonnummer</label>
-                    <input type="text" id="telefoonnummer" placeholder="telefoonnummer" minlength="10" maxlength="10" pattern="[\d]{7,14}" required>
-                    <label for="bericht">Bericht</label>
+                    <label for="phone">Telefoonnummer</label>
+                    <input type="text" id="phone" placeholder="telefoonnummer" minlength="10" maxlength="10" pattern="[\d]{7,14}" required>
+                    <label for="message">Bericht</label>
                     <textarea id="message" name="message" rows="10" placeholder="laat hier je bericht achter" required></textarea> 
                     <button class="button" type="submit">verzenden</button>  
                 </form>
